@@ -7,8 +7,7 @@ import streamlit as st
 
 def main():
     st.title("Brac You")
-    usis = "https://usis.bracu.ac.bd"
-    confirm = st.radio(f"Have you logged into [USIS]({usis})?", ("Not Yet", "Yes"))
+    confirm = st.radio(f"Have you logged into USIS?", ("Not Yet", "Yes"))
 
     if confirm == "Yes":
 
@@ -29,9 +28,13 @@ def main():
         else:
             st.link_button("Brac This", url)
 
+    else:
+        usis = "https://usis.bracu.ac.bd"
+        f"Please log in to [USIS]({usis}) first"
+
     footer_html = f"""
     <div style='text-align: center;'>
-        <p>Developed with ❤️ by <a href="https://zunayedology.github.io/">Zunayed</a></p>
+        <p>Developed with 😈 by <a href="https://zunayedology.github.io/">Zunayed</a></p>
     </div>
     """
     st.markdown(footer_html, unsafe_allow_html=True)
