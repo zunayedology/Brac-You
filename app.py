@@ -1,3 +1,7 @@
+"""
+Run the command: `streamlit run app.py`
+"""
+
 import streamlit as st
 
 
@@ -35,5 +39,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# streamlit run app.py
