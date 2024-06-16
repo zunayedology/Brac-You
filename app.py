@@ -24,13 +24,13 @@ def main():
         )
 
         if not (student_id and nick_name):
-            st.warning("Please enter proper credentials")
+            "Please enter proper credentials"
         else:
             st.link_button("Brac This", url)
 
     else:
         usis = "https://usis.bracu.ac.bd"
-        f"Please log in to [USIS]({usis}) first"
+        f"Please log into [USIS]({usis}) first"
 
     footer_html = f"""
     <div style='text-align: center;'>
